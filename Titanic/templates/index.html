@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titanic Predictor</title>
+    {% load static %}
+  </head>
+  <body>
+    <h1>Woking</h1>
+    <h3>Get your titianic Predictions Here</h3>
+    <p>Enter the Details of the Person in Titanic Voyage</p>
+    <p>We will output a Prediction</p>
+    <form action="{% url 'result' %}">
+      {% csrf_token %}
+      <div>
+        PClass:
+        <input type="text" name="pclass" id="" placeholder="Enter Class" />
+        <br />
+        Sex:
+        <input type="text" name="sex" id="" placeholder="Enter Sex" /><br />
+        Age:
+        <input type="text" name="age" id="" placeholder="Enter Age" /><br />
+        Siblings:
+        <input
+          type="text"
+          name="sibsp"
+          id=""
+          placeholder="Enter no of siblings"
+        />
+        <br />
+        Parents:
+        <input
+          type="text"
+          name="parch"
+          id=""
+          placeholder="Enter no of Parents"
+        />
+        <br />
+        Fare :
+        <input type="text" name="fare" id="" placeholder="Enter fare" />
+        <br />
+        Embark Point:
+        <input
+          type="text"
+          name="embarked"
+          id=""
+          placeholder="Enter Embarked Station"
+        />
+        <br />
+        Name Title:
+        <input type="text" name="title" id="" placeholder="Enter name Titile" />
+        <br />
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <style>
+      body {
+        background-color: rgb(224, 243, 241);
+      }
+      input {
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+      }
+    </style>
+    <a href="{% url 'result' %}">click to show result page</a>
+  </body>
+</html>
