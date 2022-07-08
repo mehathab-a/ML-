@@ -4,9 +4,9 @@ Dataset Link :https://www.kaggle.com/datasets/nipunarora8/age-gender-and-ethnici
 
 # Dataset Contains 22k images
 
- Age Classifier is saved as : 'age_class_model.sav'
- Gender Classifier is saved as : 'gender_class_model.sav'
- Ethnicity Classifier is saved as : 'ethnicity_class_model.sav'
+ Age Classifier is saved as : 'age_class_model.json' and Weights as : 'age_class_model.h5'
+ Gender Classifier is saved as : 'gen_class_model.json' and Weights as : "gen_class_model.h5"
+ Ethnicity Classifier is saved as : 'eth_class_model.json' and Weights as : "eth_class_model.h5"
  
  You Can Use Them to predict or train a new set of data
  
