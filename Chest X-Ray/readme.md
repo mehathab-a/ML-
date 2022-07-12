@@ -1,7 +1,7 @@
 ## Chest X-ray Image Dataset:
 ## Model which classifies whether an X-Ray belongs to Pneumonia Patient or not
 
-### CNN Classifier Model Used.
+### CNN Classifier Model Used. Accuracy - 95.34  loss - 0.1191
 
 ## About the Dataset :
     The dataset is organized into 3 folders (train, test, val) and contains subfolders for each image category (Pneumonia/Normal). There are 5,863 X-Ray images (JPEG) and 2 categories (Pneumonia/Normal).
