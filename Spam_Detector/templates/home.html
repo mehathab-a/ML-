@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SMS Spam Detector</title>
+</head>
+<body style="margin: 7%; background-color: #f0ffff;">
+    <div>
+        <h1>Welcome to Our SMS Spam Detector:</h1>
+        <p>This Website detects if the SMS is a Spam mail based on Artificial Neural Networks</p>
+    </div>
+    <br><br><br><br><br>
+    </b>
+    <div>
+        <form method = 'POST' action="{{url_for('home')}}">
+            <b>
+                Email : <br><br> <textarea name="msg" cols="30" rows="10" placeholder="Enter your Email"></textarea>
+            </b>
+            <br>
+            <input type="submit" value="Predict!">
+        </form>
+    </div>
+</body>
+</html>
