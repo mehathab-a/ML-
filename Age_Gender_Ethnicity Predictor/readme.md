@@ -4,11 +4,11 @@ Dataset Link :https://www.kaggle.com/datasets/nipunarora8/age-gender-and-ethnici
 
 # Dataset Contains 22k images
 
- Age Classifier is saved as : 'age_class_model.json' and Weights as : 'age_class_model.h5'
+ Age Classifier is saved as : 'age_class_model.sav'
  
- Gender Classifier is saved as : 'gen_class_model.json' and Weights as : "gen_class_model.h5"
+ Gender Classifier is saved as : 'gen_class_model.sav'
  
- Ethnicity Classifier is saved as : 'eth_class_model.json' and Weights as : "eth_class_model.h5"
+ Ethnicity Classifier is saved as : 'eth_class_model.sav'
  
  You Can Use Them to predict or train a new set of data
  
@@ -17,9 +17,9 @@ Dataset Link :https://www.kaggle.com/datasets/nipunarora8/age-gender-and-ethnici
       Input Image Size should be reshaped to [48,48,1] 
       
       output may vary according to the model selected:
-        1. for age_classifier : output is an age value(in float datatype)
-        2. for gender_classifier : output greater than 0.5 should be considered as 1 and if less than 0.5 as 0
-        3. for ethnicity : np.argmax(predicted_value) gives the class of ethnicity the input image belongs to
+      1. for age_classifier : output is an age value(in float datatype)
+      2. for gender_classifier : output greater than 0.5 should be considered as 1 and if less than 0.5 as 0
+      3. for ethnicity : np.argmax(predicted_value) gives the class of ethnicity the input image belongs to
                             These classes of Ethnic group are [0,1,2,3,4]
                         
                         
